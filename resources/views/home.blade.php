@@ -11,11 +11,11 @@
 </head>
 
 <body>
-    <header>
-        <div class="container nav">
-            <figure>
-                <a href="{{ url('/') }}"><img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="logo DC"></a>
-            </figure>
+    <header class="container">
+        <figure class="logo">
+            <a href="{{ url('/') }}"><img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="logo DC"></a>
+        </figure>
+        <nav>
             <ul>
                 <li><a href="{{ route('characters') }}">CHARACTERS</a></li>
                 <li><a href="{{ route('comics') }}">COMICS</a></li>
@@ -28,7 +28,10 @@
                 <li><a href="{{ route('news') }}">NEWS</a></li>
                 <li><a href="{{ route('shop') }}">SHOP</a></li>
             </ul>
-        </div>
+        </nav>
+        <section>
+            <div class="jumbo"></div>
+        </section>
     </header>
 </body>
 
