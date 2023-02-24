@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ env('APP_NAME') }} | Home </title>
+    <link rel="icon" href="{{ asset('images/favicon.ico') }}">
 
     @vite('resources/js/app.js')
 </head>
 
 <body>
+    <div class="info-header">
+        <div class="container">
+            <h6>DC POWER VISA</h6>
+            <h6>ADDITIONAL DC SITES</h6>
+        </div>
+    </div>
     <header class="container">
         <figure class="logo">
             <a href="{{ url('/') }}"><img src="{{ Vite::asset('resources/img/dc-logo.png') }}" alt="logo DC"></a>
@@ -29,10 +36,18 @@
                 <li><a href="{{ route('shop') }}">SHOP</a></li>
             </ul>
         </nav>
-        <section>
-            <div class="jumbo"></div>
-        </section>
     </header>
+    <div class="jumbo"></div>
+
+    <main>
+        <div class="bg-black">
+            <div class="container">
+                <div class="btn-top">
+                    <button>Current Series</button>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
